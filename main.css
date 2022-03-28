@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background: hsl(233, 47%, 7%);
+  display: grid;
+  place-items: center;
+  grid-template-columns: minmax(275px, 1440px);
+  padding: 1.5rem;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.section-center {
+  height: 100%;
+  width: 100%;
+  max-width: 20rem;
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+.section-img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.section-img {
+  background-color: hsl(277, 64%, 61%);
+}
+.section-img > img {
+  mix-blend-mode: multiply;
+  filter: opacity(0.7);
+}
+.header {
+  height: 100%;
+  padding: 1rem;
+}
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.header h1 {
+  font-size: 25px;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.footer span {
+  text-align: center;
+  color: hsl(277, 64%, 61%);
+}
+.header p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+  line-height: 1.3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.footer {
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.price-one h2 {
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+  padding-top: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .section-center {
+    max-height: 17rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    border-radius: 5px;
+  }
+  .section-img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 5px;
+  }
+  .img-pic {
+    width: 20.5rem;
+    height: inherit;
+  }
+  .header h1 {
+    font-size: 18px;
+    text-align: start;
+  }
+  .img-pic {
+    border-bottom-right-radius: 10px;
+  }
+  .header p {
+    font-size: 13px;
+    text-align: start;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+  .price-one h2 {
+    font-size: 15px;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}
+/*  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 0.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(277, 64%, 61%);
+}
